@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weblume – Modern Websites for Small Businesses</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,sans-serif}
+body{background:#f5f7ff;color:#111;line-height:1.6}
+a{text-decoration:none;color:inherit}
+header{
+  position:fixed;
+  top:0;width:100%;
+  background:#fff;
+  box-shadow:0 2px 10px rgba(0,0,0,.05);
+  z-index:1000;
+}
+header .wrap{
+  max-width:1200px;margin:auto;padding:20px;
+  display:flex;justify-content:space-between;align-items:center;
+}
+.logo img{height:50px}
+nav a{margin-left:25px;font-weight:600;color:#333}
+.hero{
+  padding:160px 20px 120px;
+  background:linear-gradient(135deg,#4f46e5,#7c3aed);
+  color:#fff;text-align:center;
+}
+.hero h1{font-size:48px;max-width:900px;margin:auto}
+.hero p{margin:25px auto;font-size:20px;max-width:700px}
+.hero .btns a{
+  display:inline-block;margin:10px;padding:16px 30px;
+  border-radius:10px;font-weight:700;transition:.3s;
+}
+.primary{background:#fff;color:#4f46e5}
+.primary:hover{background:#e0e0ff}
+.secondary{border:2px solid #fff;color:#fff}
+.secondary:hover{background:rgba(255,255,255,.2)}
+
+section{padding:100px 20px}
+.wrap{max-width:1200px;margin:auto}
+h2{font-size:36px;text-align:center;margin-bottom:20px}
+.subtitle{text-align:center;color:#555;max-width:700px;margin:0 auto 60px}
+
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px}
+.card{background:#f3f4ff;padding:30px;border-radius:20px;text-align:center;transition:.3s}
+.card:hover{background:#e0e0ff}
+
+.testimonials{background:linear-gradient(135deg,#4f46e5,#7c3aed);color:#fff}
+.testimonials .card{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);padding:30px;border-radius:20px;transition:.3s}
+.testimonials .card:hover{background:rgba(255,255,255,.18)}
+
+.contact-box{max-width:600px;margin:auto;background:#f3f4ff;padding:40px;border-radius:20px;text-align:center}
+.contact-box a{display:block;margin:15px 0;padding:16px;border-radius:12px;font-weight:700;background:#4f46e5;color:#fff;transition:.3s}
+.contact-box a:hover{background:#3b36d0}
+.contact-box a.instagram{background:#e1306c}
+.contact-box a.instagram:hover{background:#c5285a}
+
+.pricing-table{width:100%;border-collapse:collapse;margin-top:50px}
+.pricing-table th, .pricing-table td{border:1px solid #ccc;padding:15px;text-align:center;border-radius:8px}
+.pricing-table th{background:#4f46e5;color:#fff;font-size:18px}
+.pricing-table td{background:#f3f4ff;font-size:16px}
+
+.detail-table{width:100%;border-collapse:collapse;margin-top:30px}
+.detail-table th, .detail-table td{border:1px solid #ccc;padding:12px;text-align:left;border-radius:8px}
+.detail-table th{background:#7c3aed;color:#fff;font-size:16px}
+.detail-table td{background:#f9f7ff;font-size:15px}
+
+footer{background:#111;color:#aaa;padding:60px 20px;text-align:center}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="logo">
+      <img src="seven.jpg" alt="Weblume Logo">
+    </div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <h1>Beautiful Websites That Grow Your Business</h1>
+  <p>Modern, fast, professional websites built for small businesses ready to shine online.</p>
+  <div class="btns">
+    <a class="primary" href="#contact">Contact Us</a>
+    <a class="secondary" href="#pricing">Pricing</a>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <h2>Our Services</h2>
+    <p class="subtitle">Weblume offers a variety of website solutions tailored to your business needs.</p>
+    <div class="services">
+      <div class="card">
+        <h3>Business Websites</h3>
+        <p>Professional websites with Home, About, Services, and Contact pages — perfect for businesses that need a strong online presence.</p>
+      </div>
+      <div class="card">
+        <h3>Portfolio Websites</h3>
+        <p>Showcase your work elegantly with galleries and case studies. Ideal for designers, artists, and creatives.</p>
+      </div>
+      <div class="card">
+        <h3>Landing Pages</h3>
+        <p>Single-page websites for promotions, events, or lead capture. Fast, modern, and optimized for conversion.</p>
+      </div>
+      <div class="card">
+        <h3>E-Commerce Stores</h3>
+        <p>Sell products online with secure payments, inventory management, and mobile-friendly design.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="wrap">
+    <h2>Pricing Options</h2>
+    <p class="subtitle">Choose the right website package for your business — simple, advanced, or fully customized.</p>
+
+    <!-- Pricing Table -->
+    <table class="pricing-table">
+      <tr>
+        <th>Package Type</th>
+        <th>Price</th>
+      </tr>
+      <tr>
+        <td>Simple Website</td>
+        <td>R500 – R1000</td>
+      </tr>
+      <tr>
+        <td>Advanced Website</td>
+        <td>R1500 – R2500</td>
+      </tr>
+      <tr>
+        <td>Custom Website</td>
+        <td>Contact for Quote</td>
+      </tr>
+    </table>
+
+    <!-- Detailed Descriptions Table -->
+    <table class="detail-table">
+      <tr>
+        <th>Package Type</th>
+        <th>What’s Included</th>
+      </tr>
+      <tr>
+        <td>Simple Website</td>
+        <td>Basic business or portfolio website with 3–5 pages, responsive design, and essential SEO setup. Perfect for startups or individuals.</td>
+      </tr>
+      <tr>
+        <td>Advanced Website</td>
+        <td>Full-featured website with 5–10 pages, enhanced design elements, lead capture forms, SEO optimization, and optional e-commerce functionality.</td>
+      </tr>
+      <tr>
+        <td>Custom Website</td>
+        <td>Tailor-made websites with advanced features, integrations, or unique designs. Pricing depends on complexity and scope. Contact us for a personalized quote.</td>
+      </tr>
+    </table>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <h2>Get in Touch</h2>
+    <p class="subtitle">Reach out directly — we respond fast.</p>
+
+    <div class="contact-box">
+      <a href="mailto:infoweblume@gmail.com">📧 infoweblume@gmail.com</a>
+      <a class="instagram" href="https://www.instagram.com/web.lume?igsh=MXB3aDFtcmJraXRueA==" target="_blank">
+        📸 @web.lume on Instagram
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Weblume. All rights reserved.
+</footer>
+
+</body>
+</html>
